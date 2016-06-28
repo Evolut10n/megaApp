@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/samvincent/carrierwave-blob.git
+  revision: 0055e3e1058aa6ae0dca1c4c061b54f3f56ca107
+  specs:
+    carrierwave-blob (0.0.1)
+      carrierwave
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -85,6 +92,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mimemagic (0.3.1)
+    mini_magick (4.5.1)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_json (1.12.1)
@@ -167,10 +175,12 @@ PLATFORMS
 DEPENDENCIES
   byebug
   carrierwave
+  carrierwave-blob!
   coffee-rails (~> 4.1.0)
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  mini_magick
   pg
   rails (= 4.2.4)
   sass-rails (~> 5.0)

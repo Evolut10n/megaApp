@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 private
 
   def configure_premitted_parameters
-  	devise_parameter_sanitizer.for(:sign_up) << [:name, :email, :age, :gender, :onlineStatus, :password, :password_confirmation]
-  	devise_parameter_sanitizer.for(:account_update) << [:name, :email, :age, :gender, :onlineStatus, :password, :password_confirmation]
+  	devise_parameter_sanitizer.for(:sign_up) << [:name, :email, :age, :gender, :password, :password_confirmation, :remember_me, :avatar, :avatar_cache]
+  	devise_parameter_sanitizer.for(:account_update) << [:name, :email, :age, :gender, :password, :password_confirmation, :avatar, :avatar_cache]
   end
 end
