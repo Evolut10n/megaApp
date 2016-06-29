@@ -27,7 +27,7 @@
 
   <div class="field">
     <%= f.label :avatar do %>
-      <%= f.file_field :avatar %>
+      <%= f.file_field :avatar, multiple: true %>
       <%= f.hidden_field :avatar_cache %>
     <% end %>
   </div>
